@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Притчи</string>
+    <string name="find_beer">Показать притчу!</string>
+    <string name="brands"></string>
+    <string name="vibor">Выберите притчу</string>
+
+    <string-array name="spisop_pritc">
+        <item>В чем секрет успеха?</item>
+        <item>Когда начинать новое дело</item>
+        <item>Как проверить любовь на искренненость</item>
+        <item>Как противостоять злу, которое меня окружает</item>
+        <item>В чем смысл жизни?</item>
+        <item>Где искать счастье</item>
+        <item>Как научиться радоваться каждому дню</item>
+    </string-array>
+</resources>

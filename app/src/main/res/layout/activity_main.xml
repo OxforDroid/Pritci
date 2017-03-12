@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_blue_bright"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/vibor_pritc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:entries="@array/spisop_pritc"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/show_pritc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vibor_pritc"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_green_light"
+        android:onClick="onClickFindBeer"
+        android:text="@string/find_beer"/>
+
+    <TextView
+        android:id="@+id/textView_zaglav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/vibor"
+        android:textStyle="bold"
+        android:typeface="monospace"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/show_pritc"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/vivod_pritc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/show_pritc"
+                android:layout_below="@+id/show_pritc"
+                android:layout_marginTop="18dp"
+                android:text="@string/brands"
+                android:textAlignment="textStart"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
